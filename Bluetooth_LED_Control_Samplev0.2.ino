@@ -109,14 +109,6 @@ void listenForCommands()
       shimmerMode = false;
       fillMode = true;
       textMode = false;
-
-      for (int i = 0; i < NUM_COLORS; i++)
-      {
-        colorFill(colors[i]);
-        delay(1000);
-      }
-
-
     }
     else if (inputString == "c")
     {
