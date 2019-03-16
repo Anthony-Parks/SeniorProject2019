@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Customs Tail light</title>
+<title>Project Lumen</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,7 +24,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
+  /*background-image: url('logo.png');*/
   min-height: 100%;
 }
 
@@ -78,27 +78,38 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">OUR <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
+<div class="w3-display-middle bgimg-1 w3-display-container w3-opacity-min" id="home">
+  	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Project <span class="w3-hide-small">Lumen</span>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center"><em>Custom Tail Light</em></p>
-  <p>We have created few custom tail light</p>
-  <div class="w3-row">
+<div class="w3-content w3-container" id="about">
+  <h3 class="w3-center">Demo</h3>
+</div>
+<div class="w3-center">  
+  <!-- load the first video -->
+	<video width="720" height="480" controls="" class="center">
+	<source src="video2.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="w3-content w3-container">
+  <p class="w3-center"><em>Custom Tail Lights</em></p>
+  <p class="w3-center">We are researching techniques that will allow car owners to customize their tail lights. Our first 
+    prototype will be a custom design for a Mazda Miata. The tail lights will have different modes which will display different
+    animations. The modes will consist of a driving mode, a game mode, and a "show" mode. Each will be explained in detail in 
+    the <a href="#">details</a> section below.
+  </div>    
+  </p>
+  <!-- <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i> Our Group Members</b></p><br>
       <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
-    <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p>Introduction</p>
-      <p>Welcome to my website. We design and install your constom tail light. </p>
+      <p>Welcome to my website. We design and install your custom tail lights. </p>
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Examples</p>
@@ -113,10 +124,10 @@ body, html {
   <p class="w3-wide"><i class="fa fa-photo"></i>Gallery</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
+  </div> -->
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
     <span class="w3-xlarge">14+</span><br>
     Partners
@@ -133,22 +144,49 @@ body, html {
     <span class="w3-xlarge">150+</span><br>
     Meetings
   </div>
-</div>
+</div> -->
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-text-black w3-wide">DETAILS</span>
   </div>
 </div>
 
+<div class="w3-container w3-content">
+  <div class="w3-content">
+    <h1>The Modes</h1>
+    <p>The custom LED tail lights will have three states or "modes" that it will be able to display. The user 
+      will be able to choose these modes from their smartphone, as well as control some of what is being displayed
+      on the screen, such as in scrolling text or the game mode. Each mode is described below.
+    </p>
+    <h3>Driving Mode:</h3>
+    <p>The driving mode will consist of all of the normal funcitonality of a normal tail light assembly. The 
+      show mode will display brake lights, tail lights, blinkers, and hazard lights.
+    </p>
+    <img src="driving.gif">
+    <h3>Show Mode:</h3>
+    <p>The show mode will display a number of animations that we have pre-programmed into the computer that 
+      controls the tail lights. The purpose of this mode is to give car owners the ability to show off 
+      their custom LED tail lights at car shows or to their friends wherever they are. The animations will 
+      consist of scrolling text, rainbows, twinkling, and a few others.
+    </p>
+    <img src="headlights.gif">
+    <h3>Game Mode:</h3>
+    <p>The game mode is mostly an extendsion of the show mode. The driver will not be able to use this mode while driving, but 
+      it will be a terrific mode to show off the tail lights to admirers. The games we plan on adding are snake and pong.
+    </p>
+    <img src="game.gif">
+  </div>
+</div> 
+
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of our latest design.<br> Click on the images to make them bigger</em></p><br>
+<!-- <div class="w3-content w3-container" id="portfolio">
+  <h3>Examples</h3>
+  <p><em>Here are some of our latest designs.<br> Click on the images to make them bigger</em></p><br> -->
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
+  <!-- <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
       <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The triangle">
     </div>
@@ -184,40 +222,40 @@ body, html {
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
-</div>
+</div> -->
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</div> -->
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
-</div>
+</div> -->
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<!-- <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">WHERE WE WORK</h3>
-  <p class="w3-center"><em>We'd love your feedback!</em></p>
+  <p class="w3-center"><em>We'd love your feedback!</em></p> -->
 
   <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
+    <!-- <div class="w3-col m4 w3-container">
       <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
+    </div> -->
+    <div class="w3-center">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Atlanta, GA, US<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 404 435 1999<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: customtaillight@gmail.com<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
+      <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -231,7 +269,7 @@ body, html {
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form>
+      </form> -->
     </div>
   </div>
 </div>
