@@ -1,12 +1,13 @@
-#define  WIDTH      1 //Snake width
-#define  DIR_UP     1
-#define  DIR_DOWN   2
-#define  DIR_LEFT   3
-#define  DIR_RIGHT  4
+#define  WIDTH            1 //Snake width
+#define  DIR_UP           1
+#define  DIR_DOWN         2
+#define  DIR_LEFT         3
+#define  DIR_RIGHT        4
+#define  SNAKE_MAX_LENGTH 25
 
   int Length;//Curren length of snake
-  int X[BIG_X];//Array containing all snake segments,
-  int Y[BIG_Y];// max snake length is array length
+  int X[SNAKE_MAX_LENGTH];//Array containing all snake segments,
+  int Y[SNAKE_MAX_LENGTH];// max snake length is array length
   int currentDir; //Current Direction of snake
   int score;
 
@@ -30,9 +31,9 @@
     score = 0;
     //random apple coordinates
     //random color
-    appleColor = colors[random(1, NUM_COLORS)];
-    appleX = random(BIG_X-1);
-    appleY = random(BIG_Y-1);
+    appleColor = colors[7];
+    appleX = random(BIG_X);
+    appleY = random(BIG_Y);
     
     GameOver = false;
   }
@@ -73,10 +74,11 @@
         Y[Length-1] = 255;
       
         //Generate new apple position
-        appleX = random(BIG_X-1);
-        appleY = random(BIG_Y-1);
+        appleX = random(BIG_X);
+        appleY = random(BIG_Y);
         //Generate apple color
-        appleColor = colors[random(1, NUM_COLORS)];
+        //int color = random(1,NUM_COLORS);
+        appleColor = colors[7];
 
         int i= Length-1;
         for(int i=0; i<Length; i++) 
@@ -155,10 +157,13 @@
       do
       {
         //look for BT input
+        //reset to none
+        controlInput = IN_NONE;
         listenForCommands();
         if(controlInput == IN_STOP)
         {
           runSnake = false;
+          gameOver();
           break;
         }
         if(controlInput != IN_NONE && !directionChange)
@@ -203,6 +208,8 @@
   {
     GameOver = true;
     output = "Game over. Score: " + score;
+    
+    mode = 0;
   }
   
   boolean collide(int x1, int x2, int y1, int y2, int w1, int w2, int h1, int h2)
@@ -215,6 +222,4 @@
     {
       return false;
     }
-  }
-  
-;
+  };
