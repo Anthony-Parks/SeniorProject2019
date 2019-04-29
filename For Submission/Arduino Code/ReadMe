@@ -1,3 +1,8 @@
 Project Lumen Arduino Code 
 
 4 files 
+BlueTooth LED Control Sample v0.6 contains code that reads bluetooth commands from Android application and code which controls LEDs
+  during Show Mode and Text Mode operation
+Driving Mode contains driving mode implementation
+Pong contains pong implementation
+Snake contains snake implementation
